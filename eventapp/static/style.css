@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    font-family: 'Playfair Display', serif;
+}
+#logo
+{
+    width: 100px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white ;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+footer
+{
+    background-color: #333;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+#events{
+    display: flex;
+    gap: 50px;
+    justify-content:center ;
+}
+.event-card{
+    text-align: center;
+    box-shadow: 16px 16px 16px 18px  rgba(0.1,0.1,0.1,0.1);
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width:250px
+    
+}
+.detail-button
+{
+    text-decoration: none;
+    color:white;
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*event page styling*/
+#event-details{
+    max-width: 600px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.apply-form label
+{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+.apply-form{
+ gap:20px;
+}
+.apply-button
+{
+    text-decoration: none;
+    color:white;
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;   
+}
+.event-title
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

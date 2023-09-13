@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+<head >
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://efuturex.com/static/assets/img/EFUTUREX-Logo.png" alt="logo of efuturex">
+        <nav>
+            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="">login</a>
+            <a class="nav-link" href="">Registration</a>
+        </nav>
+    </header>
+    <section id="events">
+        {% for event in events %}
+        <div class="event-card">
+            <h2 class="event-title">{{event.event_title}}</h2>
+            <p class="event-location">Location:{{event.location}}</p>
+            <p class="event-date">Date:{{event.date}}</p>
+            <a href="{% url 'eventdetail'  event.pk %}" class=" detail-button">Detail</a>
+        </div>
+        {% endfor %}   
+    </section>
+    <footer>
+        <p>&copy;2023 Registration System</p>
+    </footer>
+    
+</body>
+</html>
